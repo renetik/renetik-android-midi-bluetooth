@@ -12,7 +12,7 @@ dependencies {
 }
 repositories {
     maven {
-        url 'https://github.com/kshoji/javax.sound.midi-for-Android/raw/develop/javax.sound.midi/repository'
+        url = 'https://github.com/kshoji/javax.sound.midi-for-Android/raw/develop/javax.sound.midi/repository'
     }
     mavenCentral()
 }
