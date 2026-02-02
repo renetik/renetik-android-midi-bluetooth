@@ -1,4 +1,4 @@
-rootProject.ext.namespace = 'jp.kshoji.blemidi'
+rootProject.ext.namespace = 'renetik.android.midi.bluetooth'
 if (rootProject.ext.is_renetik_library_module) apply from: '../library.gradle'
 else apply from: '../../library.gradle'
 dependencies {
