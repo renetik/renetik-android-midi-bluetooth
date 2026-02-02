@@ -1,6 +1,5 @@
 package renetik.android.midi.bluetooth.util;
 
-import android.annotation.TargetApi;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
@@ -8,7 +7,6 @@ import android.bluetooth.le.ScanFilter;
 import android.companion.AssociationRequest;
 import android.companion.BluetoothLeDeviceFilter;
 import android.content.Context;
-import android.os.Build;
 import android.os.ParcelUuid;
 
 import androidx.annotation.NonNull;
@@ -18,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import jp.kshoji.blemidi.R;
+import renetik.android.midi.bluetooth.R;
 
 /**
  * Utility for finding BLE MIDI devices
@@ -106,7 +104,6 @@ public final class BleMidiDeviceUtils {
      * @return list of {@link android.bluetooth.le.ScanFilter} for BLE MIDI devices.
      */
     @NonNull
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static List<ScanFilter> getBleMidiScanFilters(@NonNull final Context context) {
         List<ScanFilter> scanFilters = new ArrayList<>();
 
@@ -125,7 +122,6 @@ public final class BleMidiDeviceUtils {
      * @return {@link AssociationRequest} for BLE MIDI devices.
      */
     @NonNull
-    @TargetApi(Build.VERSION_CODES.O)
     public static AssociationRequest getBleMidiAssociationRequest(@NonNull final Context context) {
         final AssociationRequest.Builder associationRequestBuilder = new AssociationRequest.Builder();
 
