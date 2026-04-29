@@ -20,13 +20,13 @@ class CentralMidiInputDevice(context: Context,
 
     private val inputCharacteristic: BluetoothGattCharacteristic?
 
-    fun configureAsCentralDevice() {
+    @Suppress("DEPRECATION") fun configureAsCentralDevice() {
         bluetoothGatt.setCharacteristicNotification(inputCharacteristic, true)
         val descriptors = inputCharacteristic!!.descriptors
         for (descriptor in descriptors) {
             if (BleUuidUtils.matches(BleUuidUtils.fromShortValue(0x2902),
                     descriptor.uuid)) {
-                descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE)
+                descriptor.value = BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
                 bluetoothGatt.writeDescriptor(descriptor)
             }
         }
