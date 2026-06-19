@@ -4,15 +4,15 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import renetik.android.midi.bluetooth.device.MidiInputDevice;
-import renetik.android.midi.bluetooth.listener.OnMidiInputEventListener;
-import renetik.android.midi.bluetooth.util.Constants;
 import jp.kshoji.javax.sound.midi.InvalidMidiDataException;
 import jp.kshoji.javax.sound.midi.MidiDevice;
 import jp.kshoji.javax.sound.midi.MidiDeviceTransmitter;
 import jp.kshoji.javax.sound.midi.Receiver;
 import jp.kshoji.javax.sound.midi.ShortMessage;
 import jp.kshoji.javax.sound.midi.SysexMessage;
+import renetik.android.midi.bluetooth.device.MidiInputDevice;
+import renetik.android.midi.bluetooth.listener.OnMidiInputEventListener;
+import renetik.android.midi.bluetooth.util.Constants;
 
 /**
  * {@link jp.kshoji.javax.sound.midi.Transmitter} implementation

@@ -5,13 +5,13 @@ import android.bluetooth.BluetoothGatt
 import android.bluetooth.BluetoothGattCharacteristic
 import android.bluetooth.BluetoothGattDescriptor
 import android.content.Context
+import renetik.android.core.kotlin.unexpected
 import renetik.android.midi.bluetooth.device.MidiInputDevice
 import renetik.android.midi.bluetooth.listener.OnMidiInputEventListener
 import renetik.android.midi.bluetooth.util.BleMidiDeviceUtils.inputCharacteristic
 import renetik.android.midi.bluetooth.util.BleMidiDeviceUtils.midiService
 import renetik.android.midi.bluetooth.util.BleMidiParser
 import renetik.android.midi.bluetooth.util.BleUuidUtils
-import renetik.android.core.kotlin.unexpected
 
 @SuppressLint("MissingPermission")
 class CentralMidiInputDevice(context: Context,

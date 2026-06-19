@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import renetik.android.midi.bluetooth.device.MidiInputDevice;
-import renetik.android.midi.bluetooth.device.MidiOutputDevice;
 import jp.kshoji.javax.sound.midi.MidiDevice;
 import jp.kshoji.javax.sound.midi.MidiUnavailableException;
 import jp.kshoji.javax.sound.midi.Receiver;
 import jp.kshoji.javax.sound.midi.Transmitter;
+import renetik.android.midi.bluetooth.device.MidiInputDevice;
+import renetik.android.midi.bluetooth.device.MidiOutputDevice;
 
 /**
  * {@link jp.kshoji.javax.sound.midi.MidiDevice} implementation

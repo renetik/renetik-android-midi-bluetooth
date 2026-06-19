@@ -7,8 +7,8 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 
 import renetik.android.midi.bluetooth.device.MidiInputDevice;
-import renetik.android.midi.bluetooth.util.BleMidiParser;
 import renetik.android.midi.bluetooth.listener.OnMidiInputEventListener;
+import renetik.android.midi.bluetooth.util.BleMidiParser;
 
 @SuppressLint("MissingPermission")
 public class PeripheralMidiInputDevice extends MidiInputDevice {

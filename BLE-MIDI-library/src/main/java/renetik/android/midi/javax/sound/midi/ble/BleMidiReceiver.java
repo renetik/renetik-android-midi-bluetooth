@@ -2,13 +2,13 @@ package renetik.android.midi.javax.sound.midi.ble;
 
 import androidx.annotation.NonNull;
 
-import renetik.android.midi.bluetooth.device.MidiOutputDevice;
 import jp.kshoji.javax.sound.midi.MetaMessage;
 import jp.kshoji.javax.sound.midi.MidiDevice;
 import jp.kshoji.javax.sound.midi.MidiDeviceReceiver;
 import jp.kshoji.javax.sound.midi.MidiMessage;
 import jp.kshoji.javax.sound.midi.ShortMessage;
 import jp.kshoji.javax.sound.midi.SysexMessage;
+import renetik.android.midi.bluetooth.device.MidiOutputDevice;
 
 /**
  * {@link jp.kshoji.javax.sound.midi.Receiver} implementation
